@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+    <display-name>ShebaServices</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <description>User Setup Servlet</description>
+        <display-name>UserSetupServlet</display-name>
+        <servlet-name>UserSetupServlet</servlet-name>
+        <servlet-class>org.icddrb.shebaservices.Servlet.UserSetupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserSetupServlet</servlet-name>
+        <url-pattern>/UserSetupServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Doctor Order Servlet</description>
+        <display-name>DoctorOrderServlet</display-name>
+        <servlet-name>DoctorOrderServlet</servlet-name>
+        <servlet-class>org.icddrb.shebaservices.Servlet.DoctorOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorOrderServlet</servlet-name>
+        <url-pattern>/DoctorOrderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Progress Report Servlet</description>
+        <display-name>ProgressReportServlet</display-name>
+        <servlet-name>ProgressReportServlet</servlet-name>
+        <servlet-class>org.icddrb.shebaservices.Servlet.ProgressReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProgressReportServlet</servlet-name>
+        <url-pattern>/ProgressReportServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>Prescription Manage Servlet</description>
+        <display-name>PrescriptionManageServlet</display-name>
+        <servlet-name>PrescriptionManageServlet</servlet-name>
+        <servlet-class>org.icddrb.shebaservices.Servlet.PrescriptionManageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PrescriptionManageServlet</servlet-name>
+        <url-pattern>/PrescriptionManageServlet</url-pattern>
+    </servlet-mapping>
+    <!--<resource-ref>-->
+        <!--<description>MySQL Datasource</description>-->
+        <!--<res-ref-name>jdbc/mysql</res-ref-name>-->
+        <!--<res-type>javax.sql.DataSource</res-type>-->
+        <!--<res-auth>Container</res-auth>-->
+        <!--<res-sharing-scope>Shareable</res-sharing-scope>-->
+    <!--</resource-ref>-->
+
+</web-app>

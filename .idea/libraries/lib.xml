@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../common/lib/jsp-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../common/lib/servlet-api.jar!/" />
+      <root url="file://$PROJECT_DIR$/WEB-INF/lib" />
+      <root url="jar://$PROJECT_DIR$/Lib/gson-2.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/WEB-INF/lib" recursive="false" />
+  </library>
+</component>
